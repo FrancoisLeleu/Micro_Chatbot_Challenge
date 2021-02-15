@@ -1,3 +1,26 @@
+// welcome messages 
+
+/*const phrases =[
+    "hi welcome",
+    " Nice to see you again",
+    "welcome back",
+]
+*/
+// html
+/*let phrasesindex =(Math.floor(Math.random()*phrases.length));
+
+console.log( phrases[phrasesindex]);
+*/
+// 3 welcomes random messages .
+
+// chat bot
+
+/*let bot = prompt ("how do you feel today");*/
+
+// inclure html (récuperer doc)
+//link 
+// var useranswer(si contient oui ou non)
+// getElementById (ENTER BUTTON)
 const answers =[
     ("blabla", "blalbla", "lolololo"),
     ("hahah", "gthtgth", "hdtyrike"),
@@ -10,7 +33,7 @@ const answer =[
 ]
 
 var reponse ={Y:"yes", n:"non"}; 
-// var useranswer(si contient oui ou non)
+
 for (var property in reponse){
     if ("yes") {
         let answersindex = Math.floor(Math.random()*answers.length);
@@ -20,13 +43,16 @@ for (var property in reponse){
         let answerindex = Math.floor(Math.random()*answer.length);
         console.log(answer[answerindex]);
 }
-    else {
+    else { 
         console.log("i didn't understand, can you please try again");
-        if ( ..> 3){
+        if ( (reponse != "yes" && reponse !="non") =3  ){
             console.log ("dude, are you sure you can read?");
         } // alert
     }
 }
+
+
+
 
 
 
