@@ -1,11 +1,12 @@
 // welcome messages 
 
-/*const phrases =[
+
+const phrases =[
     "hi welcome",
     " Nice to see you again",
     "welcome back",
 ]
-*/
+}
 // html
 /*let phrasesindex =(Math.floor(Math.random()*phrases.length));
 
@@ -21,6 +22,7 @@ console.log( phrases[phrasesindex]);
 //link 
 // var useranswer(si contient oui ou non)
 // getElementById (ENTER BUTTON)
+document.getElementById("id").addEventListener('click', ());{
 const answers =[
     ("blabla", "blalbla", "lolololo"),
     ("hahah", "gthtgth", "hdtyrike"),
@@ -44,14 +46,17 @@ for (var property in reponse){
         console.log(answer[answerindex]);
 }
     else { 
-        console.log("i didn't understand, can you please try again");
+        document.getElementsById("welcome");
+        element.innerHTML = "mad";
+            console.log("i didn't understand, can you please try again");
+        
         if ( (reponse != "yes" && reponse !="non") =3  ){
             console.log ("dude, are you sure you can read?");
         } // alert
     }
 }
 
-
+}
 
 
 
