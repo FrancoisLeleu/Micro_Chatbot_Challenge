@@ -1,8 +1,9 @@
+/*------first step-------------*/
+
 const welcome = ["Hi, welcome", "Nice to see you again","Welcome back"];
 
+let randomWelcome = welcome[Math.floor(Math.random()*welcome.length)];
 
-    var randomItem = welcome[Math.floor(Math.random()*welcome.length)];
-    function open () {
-        alert (randomItem)
-    }
-    window.onload=open
+let p = document.getElementById("randomText");
+
+p.textContent = randomWelcome;
