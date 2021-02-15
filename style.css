@@ -1,0 +1,51 @@
+html,body{
+  background-image:radial-gradient(black,rgb(2, 36, 2),rgb(3, 83, 3));
+}
+  
+/* BODY STRUCTURE */
+.container{
+ display:grid;
+ grid-template-columns:1fr 1fr ;
+ grid-template-rows:auto auto 200px auto; 
+}
+
+header{
+  grid-column:span 2;
+  text-align:center;
+  color:lightgray;
+  
+}
+
+/* AVATAR CONTAINER(ROW)*/
+.avatar{
+  grid-column:span 2;
+  place-self:center;
+}
+
+/* AVATAR ITSELF */
+img{
+  width:300px;
+  height:auto;
+}
+
+/* BOT'S MESSAGES DISPLAY */
+.avatartext{
+  grid-column:span 2;
+  background-color:lightgray;
+  border-radius:10px;
+  padding:20px;
+  max-width:400px;
+  height:auto;
+  place-self:center;
+}
+
+/* TEXT BOX */
+.useraction{
+  grid-column:span 2;
+  place-self:center; 
+}
+
+/* BUTTON CUSTOMIZATION */
+#send{
+  font-size:20px;
+}
