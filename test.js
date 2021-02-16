@@ -1,18 +1,47 @@
-/*-------------------------------------------------------------------first step------------------------------------------------------------*/
+/*-----------------------------------------------------------------first step----------------------------------------------------------------------------------------*/
 
-const welcome = ["Hi, welcome", "Nice to see you again","Welcome back"];
+const welcome = ["Hi, welcome !", "Nice to see you again !","Welcome back !"];
 
-let randomWelcome = welcome[Math.floor(Math.random()*welcome.length)];
+    var randomItem = welcome[Math.floor(Math.random()*welcome.length)];
+    function displayMsg (message) {
+        let p = document.getElementById("greetings");
+        p.textContent = message;
+    }
+/*------------------------------------------------------------How do you feel today ?------------------------------------------------------------------------------------*/
 
-let p = document.getElementById("randomText");
+    window.onload= () => {
+        displayMsg (randomItem);
+        setTimeout(function () { 
+            displayMsg ("How Are You Today ?")}, 6000);
+    }
+    
+/*-------------------------------------------------------------------Yes or No-----------------------------------------------------------------------------------------*/
 
-p.textContent = randomWelcome;
+/*---------------------------------------------------------Let and Constants assignations---------------------*/
 
-/*------------------------------------------------------------How do you feel today----------------------------------------------------------*/
+      let answerYes = ["I'm so Happy for you, you get 1 Life", "Press Start to begin a New Game", "Nooice, but it's still gonna be 20cts to Play"];
 
-function howare() {
-    setTimeout(function(){ alert("How do you feel today"); }, 6000);
-  }
+      let answerNo = ["You'll start with minus 1 Life", "What's gonna be when you loose the Game ?", "'So sad for you...can we begin now ?"];
 
-window.onload=howare
+      let wrong = 0;
 
+      const randomYes = answerYes [Math.floor(Math.random()*answerYes.length)];
+
+      const randomNo = answerNo [Math.floor(Math.random()*answerNo.length)];
+
+/*-----------------------------------------------------------------Main Function----------------------------------------------------------------------------------------*/
+
+    function sendInput() {
+        let userInput = document.getElementById("input").value;
+        
+          if (userInput == "yes") {
+            displayMsg (randomYes)
+          } else if (userInput == "no") {
+            displayMsg (randomNo) 
+          } else { wrong ++;
+            if (wrong <= 3)
+            {displayMsg("Whut ? Can you be more specific ?")}
+            else {displayMsg("Bzzzt that's enough ! My circuits are boiling, GAME OVER !")
+            };
+            
+          }};

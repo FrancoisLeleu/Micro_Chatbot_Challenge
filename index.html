@@ -25,19 +25,21 @@
   </section>
   <section class="avatartext">
      <!-- TEXT FROM AVATAR -->
-    <p id="randomText">Bot's message</p>   
+    <p id="greetings">Bot's message</p>   
   </section>
     
       
     <!-- TEXT BOX -->
   <section class ="useraction">
-    <textarea cols="40" rows="5"></textarea> 
+    <textarea id="input" cols="40" rows="5"></textarea> 
   
     <!-- END TEXT BOX --> 
     <!-- SEND BUTTON -->
+
     <div>
-      <button type="button"  id="send">send</button>
+      <button type="button"  id="send" onclick="sendInput()">send</button>
     </div>
+
   </section>
   <!-- END SEND BUTTON --> 
   <script src="test.js"></script>
