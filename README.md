@@ -18,13 +18,15 @@ We have implemented these functions to the bot :
 - if the script cannot find a "yes" or a "no" in the message after three attempts, the bot begins to be mad and use "__ACTUAL ANSWER__"
 - After this answer, the bot has finish his routine. He says "__ACTUAL ANSWER__" to the user and the textarea go to disabled mode.
 - And change of expression for the bot in relation with his comprehension of the questions.
+
 an these three images :
 =======================
+
 ![welcome avatar](images/welcome-monster.png)
 ![frustrated avatar](images/frustrated-monster.png)
 ![mad avatar](images/mad-monster.png)
-For the verifications :
-=======================
+
+
 The HTML and CSS pass the W3C Validation tool with a score of :
 
 The lighthouse test scores is : on Performance,  on Best Practices, on Accessibility and SEO.
