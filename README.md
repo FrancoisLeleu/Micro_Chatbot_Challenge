@@ -1,6 +1,12 @@
 # Micro_Chatbot_Challenge
 This is our ChatBot Challenge
 
+We decided to work on the ChatBot because it seemed funier to make.
+It took us 3 days to do and 
+
+You can see it here :
+
+
 Workers on this project are :
 =============================
 - Sylvain Haenen : Javascript
@@ -21,7 +27,7 @@ We have implemented these functions to the bot :
 - And change of expression for the bot in relation with his comprehension of the questions.
 
 And these three images :
-=======================
+========================
 
 ![welcome avatar](images/welcome-monster.png)
 ![frustrated avatar](images/frustrated-monster.png)
