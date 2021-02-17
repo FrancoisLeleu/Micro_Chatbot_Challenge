@@ -26,19 +26,30 @@ var randomNo = answerNo [Math.floor(Math.random()*answerNo.length)];
 //SEND MESSAGES 
 
 function sendInput() {
-    
     let userInput = document.getElementById("input").value;
     if (userInput == "yes") {
-        displayMsg (randomYes);     
+        displayMsg (randomYes); 
+        frustratedBot.style.display="none";
+        madBot.style.display="none";
+        welcomeBot.style.display="inline";    
     } else if (userInput == "no") {
-        displayMsg (randomNo); 
+        displayMsg (randomNo);
+        welcomeBot.style.display="none";
+        madBot.style.display="none";
+        frustratedBot.style.display = "inline";   
     } else {
         welcomeBot.style.display="none";
+        madBot.style.display="none";
         frustratedBot.style.display = "inline";
         displayMsg (" Whut ? I did not understand, can you please try again ?");
     }
+
     
 }
+
+
+// Execute a function when the user releases a key on the keyboard
+
 
 //DISABLE TEXTAREA AND BUTTON
 /* document.getElementById("input").disabled = true;

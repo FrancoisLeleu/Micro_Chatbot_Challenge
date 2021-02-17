@@ -62,7 +62,7 @@ img{
 
   .avatartext{
     grid-column:2/3;
-    align-self:bottom;
+    /* align-self:bottom; */
     justify-self:left;
     
   }
