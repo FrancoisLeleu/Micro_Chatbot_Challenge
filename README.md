@@ -38,6 +38,6 @@ Generated from this site : [Kartunix](https://www.kartunix.com/)
 For the verifications :
 =======================
 
-The HTML and CSS pass the W3C Validation tool with a score of :
+The HTML and CSS pass the W3C Validation tool has 3 hints.
 
 The lighthouse test scores is : __100__ on Performance, __93__ on Best Practices, __85__ on Accessibility, __92__ and SEO for a total of __100__.
