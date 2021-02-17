@@ -3,13 +3,14 @@ html,body{
   font-family:sans-serif;
 }
   
-/* ------------------------------------------------------------------------------BODY STRUCTURE ---------------------------------------------------------------------*/
+/* BODY STRUCTURE */
 .container{
  display:grid;
  grid-template-columns:1fr 1fr ;
  grid-template-rows:auto auto 200px auto; 
  grid-row-gap:20px;
 }
+
 header{
   grid-column:span 2;
   text-align:center;
@@ -17,19 +18,19 @@ header{
   font-size:25px;  
 }
 
-/*---------------------------------------------------------------------------- AVATAR CONTAINER(ROW)----------------------------------------------------------------------*/
+/* AVATAR CONTAINER(ROW)*/
 .avatar{
   grid-column:span 2;
   place-self:center;
 }
 
-/*------------------------------------------------------------------------------- AVATAR ITSELF-------------------------------------------------------------------- */
+/* AVATAR ITSELF */
 img{
   width:300px;
   height:auto;
 }
 
-/*------------------------------------------------------------------------- BOT'S MESSAGES DISPLAY--------------------------------------------------------------------- */
+/* BOT'S MESSAGES DISPLAY */
 .avatartext{
   grid-column:span 2;
   background-color:lightgray;
@@ -41,13 +42,13 @@ img{
   place-self:center;
 }
 
-/* ----------------------------------------------------------------------------------TEXT BOX----------------------------------------------------------------------------- */
+/* TEXT BOX */
 .user{
   grid-column:span 2;
-  place-self:center; 
+  place-self: center;
 }
 
-/*------------------------------------------------------------------------------ BUTTON CUSTOMIZATION-------------------------------------------------------------------------- */
+/* BUTTON CUSTOMIZATION */
 #send{
   font-size:20px;
 }
@@ -61,7 +62,6 @@ img{
 
   .avatartext{
     grid-column:2/3;
-    align-self:bottom;
     justify-self:left;
     
   }
