@@ -52,6 +52,7 @@ const welcome = ["Hi, welcome !", "Nice to see you again !","Welcome back !"];
           
 /*-----------------------------------------------------------------------3 Messages random de Salutation-------------------------------------------------------------------------*/
 
+
 const welcome = ["Hi, welcome !", "Nice to see you again !","Welcome back !"];
 
 
@@ -78,7 +79,7 @@ const welcome = ["Hi, welcome !", "Nice to see you again !","Welcome back !"];
 let counterOfClick = 0;
 
 
-document.getElementById("send").addEventListener("click", (e) => {
+document.getElementById("send").addEventListener("click",  (e) => {
     counterOfClick++
     let y = "yes"
     let n = "no"
@@ -88,6 +89,7 @@ document.getElementById("send").addEventListener("click", (e) => {
           const yesAnswers = ["I'm Happy for You !", "Enjoy my friend, ENJOY !...", "Good to Hear !"]
   
           var randomItem = yesAnswers[Math.floor(Math.random()*yesAnswers.length)];
+         
           displayMsg (randomItem);
   
     } else if (getInputValue ().toLowerCase().includes(n)){
@@ -100,7 +102,7 @@ document.getElementById("send").addEventListener("click", (e) => {
     } else {
   
           if(counterOfClick >= 3){
-
+          
             displayMsg("Bzzzt bzzt my circuits are boiling");
             setTimeout(function () {
                 shutOffMachine ()
