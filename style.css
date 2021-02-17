@@ -1,5 +1,6 @@
 html,body{
   background-image:radial-gradient(black,rgb(2, 36, 2),rgb(3, 83, 3));
+  font-family:sans-serif;
 }
   
 /* BODY STRUCTURE */
@@ -7,13 +8,14 @@ html,body{
  display:grid;
  grid-template-columns:1fr 1fr ;
  grid-template-rows:auto auto 200px auto; 
+ grid-row-gap:20px;
 }
 
 header{
   grid-column:span 2;
   text-align:center;
   color:lightgray;
-  
+  font-size:25px;  
 }
 
 /* AVATAR CONTAINER(ROW)*/
@@ -32,20 +34,49 @@ img{
 .avatartext{
   grid-column:span 2;
   background-color:lightgray;
+  font-size:20px;
   border-radius:10px;
   padding:20px;
-  max-width:400px;
+  max-width:300px;
   height:auto;
   place-self:center;
 }
 
 /* TEXT BOX */
-.useraction{
+.user{
   grid-column:span 2;
-  place-self:center; 
+  place-self: center;
 }
 
 /* BUTTON CUSTOMIZATION */
 #send{
   font-size:20px;
+}
+
+/* FOR DESKTOP */
+@media only screen and (min-width:1200px){
+  .avatar{
+    grid-column:1/2;
+    grid-row:span 2;
+  }
+
+  .avatartext{
+    grid-column:2/3;
+    justify-self:left;
+    
+  }
+
+ .user{
+   grid-column:2/3;
+   grid-row:3/4;
+   justify-self:left;
+ }
+
+ #input{
+  width:400px;
+  
+  justify-self:center;
+ }
+ 
+
 }

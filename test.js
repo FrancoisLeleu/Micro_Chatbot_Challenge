@@ -21,22 +21,55 @@ const welcome = ["Hi, welcome !", "Nice to see you again !","Welcome back !"];
     return document.getElementById("input").value;
   }
 
+
 //---------Réactions du Bot (version moi)---------  
 
 let counterOfClick = 0;
 
 
 document.getElementById("send").addEventListener("click", (e) => {
-    counterOfClick++
+
+  robotReactToUserInput ();
+
+})
+
+/*
+document.getElementById("send").addEventListener("keyPress", (e) => { 
+  
+  if(e.key === 13) {
+    console.log(e.key)
+
+    robotReactToUserInput ();
+  }
+  })
+  */
+
+     //IMAGES
+     var welcomeBot = document.getElementById("welcome");
+     var frustratedBot = document.getElementById("frustrated");
+     var madBot = document.getElementById("mad");
+     //HIDDEN IMAGES
+     frustratedBot.style.display = "none";
+     madBot.style.display = "none";
+
+function robotReactToUserInput () {
+
+  counterOfClick++
     let y = "yes"
     let n = "no"
   
+
     if (getInputValue ().toLowerCase().includes(y)){
   
           const yesAnswers = ["I'm Happy for You !", "Enjoy my friend, ENJOY !...", "Good to Hear !"]
-  
+
+      
           var randomItem = yesAnswers[Math.floor(Math.random()*yesAnswers.length)];
           displayMsg (randomItem);
+          frustratedBot.style.display = "none";
+          madBot.style.display = "none";
+          welcomeBot.style.display = "inline";
+
   
     } else if (getInputValue ().toLowerCase().includes(n)){
   
@@ -44,24 +77,43 @@ document.getElementById("send").addEventListener("click", (e) => {
           
           var randomItem = noAnswers[Math.floor(Math.random()*noAnswers.length)];
           displayMsg (randomItem);
+          frustratedBot.style.display = "inline";
+          madBot.style.display = "none";
+          welcomeBot.style.display = "none";
+
+          
   
     } else {
-  
-          if(counterOfClick >= 3){
 
-            displayMsg("Get the fuck out of here you dumb ass !!!");
+
+
+            
+            if(counterOfClick >= 3){ 
+
+            displayMsg("Dude, can you read ??");
+            
+            welcomeBot.style.display="none";
+            frustratedBot.style.display = "none";
+            madBot.style.display = "inline";
+            
             setTimeout(function () {
                 shutOffMachine ()
-            }, 3000)
+            }, 3000);
 
           } else {
               
-            displayMsg ("I didn't get that, could you talk proper english please ?");
+            displayMsg ("I didn't get that, could you please try again ?");
+
+            madBot.style.display = "none";
+            welcomeBot.style.display="none";
+            frustratedBot.style.display = "inline";
 
           }
+        
   
     }
-})
+
+}
 
 function shutOffMachine () {
 
@@ -70,6 +122,8 @@ function shutOffMachine () {
     displayMsg ("Bye !");
     
 }
+
+
 
   
 
