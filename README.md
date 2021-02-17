@@ -19,7 +19,6 @@ We have implemented the following functions to our bot :
 - After this answer, the bot has finish his routine. He says "__ACTUAL ANSWER__" to the user and the textarea go to disabled mode.
 
 For the verifications :
-
 =======================
 The HTML and CSS pass the W3C Validation tool with a score of :
 
