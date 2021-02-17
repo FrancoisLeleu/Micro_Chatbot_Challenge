@@ -5,11 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  
   <title>Document</title>
 </head>
 
 <body class = "container">
   <header>
+
     <!-- TITLE -->
     <h1>CHATBOT</h1>
   </header> 
@@ -17,28 +19,31 @@
     <!-- OUR AVATAR SHOWING DIFFERENT EMOTIONS DEPENDING ON THE INTERACTION WITH THE USER -->
     <!-- (we could use an if else in js to change photo display) -->
     <!-- WELCOME AVATAR -->
-    <img src="images/welcome-monster.png" alt="avatar" id="welcome">
+    <img src="https://github.com/FrancoisLeleu/Micro_Chatbot_Challenge/blob/Sara/images/welcome-monster.png?raw=true" alt="avatar" id="welcome">
     <!-- AVATAR FOR "I DIDN'T UNDERSTAND" -->
-    <!--  <img src="images/frustrated-monster.png" alt="frustrated avatar" id="frustrated"> -->
+    <!--<img src="images/frustrated-monster.png" alt="frustrated avatar" id="frustrated"> -->
     <!-- MAD AVATAR -->
-    <!-- <img src="images/mad-monster.png" alt="mad avatar" id="mad">   -->
+     <!--<img src="images/mad-monster.png" alt="mad avatar" id="mad">  -->
   </section>
   <section class="avatartext">
      <!-- TEXT FROM AVATAR -->
-    <p>Bot's message</p>   
+    <p id="randomText">Bot's message</p>  
+    
   </section>
     
       
     <!-- TEXT BOX -->
   <section class ="useraction">
-    <textarea cols="40" rows="5"></textarea> 
+    <textarea id="input" cols="40" rows="5"></textarea> 
   
     <!-- END TEXT BOX --> 
     <!-- SEND BUTTON -->
     <div>
-      <button type="button"  id="send">send</button>
+      <button type="button"  id="send" onclick="sendInput()">send</button>
+      
     </div>
   </section>
   <!-- END SEND BUTTON --> 
+  <script src="script.js"></script>
 </body>
 </html>
