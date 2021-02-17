@@ -8,7 +8,7 @@ Workers on this project are :
 - Sandrine Bataganira : Javascript
 - Sara brzn : Html and CSS
 
-We have implemented the following functions to the bot :
+We have implemented these functions to the bot :
 ========================================================
 - on loading of the page, the bot welcomes the user with a random greeting message, then, he ask the user "how do you feel today?".
 - The user can reply freely, and the bot need to check in the response if he can find a "yes" or a "no":
