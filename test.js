@@ -37,7 +37,7 @@ const welcome = ["Hi, welcome !", "Nice to see you again !","Welcome back !"];
           if (userInput == "yes") {
             displayMsg (randomYes)
           } else if (userInput == "no") {
-            displayMsg (randomNo) 
+            displayMsg (randomNo)
           } else { wrong ++;
             if (wrong <= 3)
             {displayMsg("Whut ? Can you be more specific ?")}
