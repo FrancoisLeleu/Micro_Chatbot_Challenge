@@ -4,7 +4,7 @@ This is our ChatBot Challenge
 We decided to work on the ChatBot because it seemed funier to make.
 It took us 3 days to do and 
 
-You can see it here :
+You can see it here : https://francoisleleu.github.io/Micro_Chatbot_Challenge/
 
 
 Workers on this project are :
