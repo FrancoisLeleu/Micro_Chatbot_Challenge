@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   
+  
   <title>Document</title>
 </head>
 
@@ -15,29 +16,25 @@
     <h1>CHATBOT</h1>
   </header> 
   <section class = "avatar">
-    <!-- OUR AVATAR SHOWING DIFFERENT EMOTIONS DEPENDING ON THE INTERACTION WITH THE USER -->
-    <!-- (we could use an if else in js to change photo display) -->
     <!-- WELCOME AVATAR -->
     <img src="images/welcome-monster.png" alt="avatar" id="welcome">
     <!-- AVATAR FOR "I DIDN'T UNDERSTAND" -->
-    <!--  <img src="images/frustrated-monster.png" alt="frustrated avatar" id="frustrated"> -->
+     <img src="images/frustrated-monster.png" alt="frustrated avatar" id="frustrated">
     <!-- MAD AVATAR -->
-    <!-- <img src="images/mad-monster.png" alt="mad avatar" id="mad">   -->
+    <img src="images/mad-monster.png" alt="mad avatar" id="mad">  
   </section>
   <section class="avatartext">
      <!-- TEXT FROM AVATAR -->
     <p id="greetings"></p>   
   </section>
-    
-      
-    <!-- TEXT BOX -->
+    <!-- USER TEXT BOX -->
   <section class="user">
-    <textarea id="userInput" cols="40" rows="5"></textarea> 
+    <textarea id="input" cols="40" rows="5" placeholder="write your message here"></textarea> 
   
     <!-- END TEXT BOX --> 
     <!-- SEND BUTTON -->
     <div>
-      <button type="button"  id="send">send</button>
+      <button type="button" id="send" onclick = "sendInput()">send</button>
     </div>
   </section>
   <!-- END SEND BUTTON --> 
